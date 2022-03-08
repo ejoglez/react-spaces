@@ -1,0 +1,33 @@
+.navbar{
+    display: flex;
+    flex-direction: row;
+    flex: wrap;
+
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-between;
+
+    border: solid 3px white;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: RGB(33, 83, 174);
+
+    text-decoration: none;
+}
+
+.navbar h1, h3{
+    margin: 8px;
+    padding: 2px;
+    color: white;
+}
+
+.navbar a{
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
