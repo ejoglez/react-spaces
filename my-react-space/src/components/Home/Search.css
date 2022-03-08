@@ -3,6 +3,7 @@ padding: 6px;
 height: 20px;
 font-weight: 600;
 color: rgb(43, 32, 32);
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .fullSearch{
     box-shadow: 0 .2rem 1rem rgba(0, 0, 0, 0.1);
