@@ -1,0 +1,15 @@
+.label{
+padding: 6px;
+height: 20px;
+font-weight: 600;
+color: rgb(43, 32, 32);
+}
+.fullSearch{
+    box-shadow: 0 .2rem 1rem rgba(0, 0, 0, 0.1);
+    width: 120px;
+    height: 25px;
+}
+.search{
+    padding: 20px;
+    grid-area: auto;
+}
