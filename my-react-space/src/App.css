@@ -1,11 +1,7 @@
 .App {
   text-align: center;
-  margin:auto;
-  padding-left: 5%;
-  padding-right: 5%;
-  min-width: 80vw;
-  background: rgb(236, 236, 231);
- 
+  margin:0;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
- /* background: linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5) */

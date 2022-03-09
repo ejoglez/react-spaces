@@ -1,6 +1,7 @@
 import React,{useState,useEffect} from "react";
 import Search from "./Search";
 import ShowNews from "./ShowNews";
+import Article from "./Article";
 import "./Home.css"
 
 function Home(){
@@ -13,36 +14,29 @@ function Home(){
         .then(r=> r.json() )
         .then(d=> setNews(d.articles) )
     },[])
-//title
-const chosenPresent= news.filter(el=>(
-    el.title.toLowerCase().includes(search.toLowerCase() )
-))
 
-    const present=chosenPresent.map(el=>(
-       
-       <div className="newsArtkill" key={el.title}>
-            
-        <h2><stron>{el.title}</stron></h2>
-        <a href={el.url}> 
-        <img  src={el.urlToImage} alt="editoral pic"/> 
-        </a>
-        <h4><em>{el.source.name}</em></h4>
-        <br></br>
-        <p>by: {el.author}</p>
-        <p>{el.description}</p>
+    const chosenPresent = news.filter(el=>(
+        el.title.toLowerCase().includes(search.toLowerCase() )
+    ))
 
-        <br></br>
-        </div>
+    const present = chosenPresent.map(el=>(
+        <Article 
+        title={el.title} 
+        url={el.url} 
+        urlToImage={el.urlToImage} 
+        name={el.source.name} 
+        author={el.author} 
+        description={el.description}
+        />
     ))
 
     return (
-        <div>
+        <>
             <Search search={search} setSearch={setSearch} />
-            
-            <div className="artContainer">
-            <ShowNews present={present}/>
-            </div>
-        </div>
+                <div className="artContainer">
+                    <ShowNews present={present}/>
+                </div>
+        </>
     )
 }
 
