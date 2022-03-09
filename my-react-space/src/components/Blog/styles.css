@@ -1,0 +1,64 @@
+.mainContent{
+    display: grid;
+    grid-template-areas:
+    'head head head head'
+    '. form . panel'
+    'post post post panel';
+    
+    grid-auto-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.header{
+    grid-area: head;
+    padding: 0;
+    margin: 0;
+    box-shadow: .6rem .7rem .4rem rgba(0, 0, 0, 0.1);
+}
+
+.header h1{
+    margin: .5rem;
+    margin-top: .5rem;
+}
+
+.sidePanel{
+    grid-area: panel;
+    border: 4px solid #ccc;
+}
+
+.sidePanel h1{
+    margin: 1rem;
+}
+
+.blogList-wrap{
+   grid-area: post;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 1.3rem;
+}
+
+.blogPost{
+    border: solid 2px black;
+    border-radius: 10px;
+    box-shadow: 11px 13px 7px #4f6797;
+    text-overflow: hidden;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    grid-area: form;
+    margin-bottom: 5rem;
+    align-items: flex-start;
+}
+
+.form label {
+    margin: .5rem;
+    margin-right: .5rem;
+}
+
+.submitBtn{
+    max-width: 25%;
+    
+}

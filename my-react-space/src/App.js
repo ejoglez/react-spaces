@@ -3,7 +3,7 @@ import {Route, Switch} from 'react-router-dom'
 import Navbar from './components/Nav/Navbar';
 import Home from './components/Home/Home'
 import Profile from './components/Profile/Profile'
-import Blog from './components/Blog/Blog'
+import BlogSection from './components/Blog/BlogSection'
 import './App.css';
 
 function App() {
@@ -13,13 +13,12 @@ function App() {
       <Switch>
         <Route exact path="/">
           <Home />  
-        
         </Route>
         <Route exact path="/profile">
           <Profile />
         </Route>
         <Route exact path="/blogs">
-          <Blog />
+          <BlogSection />
         </Route>
 
       </Switch>
