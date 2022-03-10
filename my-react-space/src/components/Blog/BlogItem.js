@@ -1,11 +1,12 @@
 import React from "react";
 import "./styles.css"
 
-function BlogItem({title, body}){
+function BlogItem({blog,favBlog, retire}){
     return (
-        <div className="blogPost">
-            <h3>{title}</h3>
-            <p>{body}</p>
+        <div onClick={()=>favBlog(blog)} className="blogPost">
+            <h3>{blog.title}</h3>
+            <p>{blog.body}</p>
+            <button onClick={()=>retire(blog)} >Purge</button>
         </div>
     )
 }
