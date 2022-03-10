@@ -1,6 +1,8 @@
 import React from 'react'
 
-function BlogForm(){   
+function BlogForm(){  
+    
+    
     return(
     <form className="form">
         <h1>Write about it</h1>
@@ -10,7 +12,7 @@ function BlogForm(){
         </label>
         <label>
             Body:
-            <input type="text" name="name" />
+            <textarea type="text"  name="name" />
         </label>
             <input type="submit" value="Submit" className="submitBtn"/>
     </form>
