@@ -4,7 +4,7 @@
     'head head head head'
     '. form . panel'
     'post post post panel';
-    
+    font-family: Tomorrow, sans-serif;
     grid-auto-columns: 1fr;
     gap: 2rem;
     margin-bottom: 2rem;
@@ -44,6 +44,9 @@
     box-shadow: 11px 13px 7px #4f6797;
     text-overflow: hidden;
 }
+.blogPost h3{
+    color:RGB(106, 183, 190);
+}
 
 .form{
     display: flex;
@@ -59,6 +62,18 @@
 }
 
 .submitBtn{
-    max-width: 25%;
+    max-width: 35%;
+    text-transform: uppercase;
+    font-family: Tomorrow, sans-serif;
     
 }
+.purge{
+    font-family: Tomorrow, sans-serif;
+    text-transform: uppercase;
+}
+
+/* text-transform: uppercase;
+color:#ffa7c5;
+background-color:   RGB(40, 44, 53);
+color:RGB(106, 183, 190);
+font-family: Tomorrow, sans-serif; */
