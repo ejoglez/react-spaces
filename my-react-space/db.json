@@ -8,20 +8,35 @@
     },
     {
       "userId": 1,
-      "id": 5,
-      "title": "nesciunt quas odio",
-      "body": "repudiandae veniam quaerat sunt sed\nalias aut fugiat sit autem sed est\nvoluptatem omnis possimus esse voluptatibus quis\nest aut tenetur dolor neque"
-    },
-    {
-      "userId": 1,
       "id": 6,
       "title": "dolorem eum magni eos aperiam quia",
       "body": "ut aspernatur corporis harum nihil quis provident sequi\nmollitia nobis aliquid molestiae\nperspiciatis et ea nemo ab reprehenderit accusantium quas\nvoluptate dolores velit et doloremque molestiae"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "name": "Jerry",
+      "image": "https://en.meming.world/images/en/thumb/7/7f/Polish_Jerry.jpg/300px-Polish_Jerry.jpg",
+      "post": "I like the profile! But mine is better xD"
     },
     {
-      "title": "Why kisamia Is Best memebr",
-      "body": "He believed in the mission and was so trusted that the boss showed his identity because he was so dedicated. In addition, is his teammate who never trusted anyone in his entire life trusted Kisiamia to get the task done. In addition, the man is extremely powerful, knowledgeable, and has created judgment skills.",
-      "id": 7
+      "id": 2,
+      "name": "Drippy Droppy",
+      "image": "https://i.pinimg.com/222x/24/c9/98/24c998f4a4d127ae8b8bfd1199134308.jpg",
+      "post": "I like it, picasso."
+    },
+    {
+      "id": 3,
+      "name": "Kate",
+      "image": "https://i.pinimg.com/474x/00/53/9e/00539e53bb6850c7bbb08e55c4fe0658--tom-and-jerry-jerry-oconnell.jpg",
+      "post": "hey handsome"
+    },
+    {
+      "id": 4,
+      "name": "Spike",
+      "image": "https://i.pinimg.com/originals/92/68/f0/9268f090522443c4074d72e5f3f24c5f.jpg",
+      "post": "woof"
     }
   ]
 }
