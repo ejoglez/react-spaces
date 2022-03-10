@@ -23,8 +23,9 @@ function BlogForm({blog,setBlog}){
             })
         }).then(r=>r.json() )
         .then(d=> setBlog([...blog,d]))
+        e.target.reset()
     }
-    
+
     function newBlog(x){
         setUpdate({...update, [x.target.name]: x.target.value })
     }
