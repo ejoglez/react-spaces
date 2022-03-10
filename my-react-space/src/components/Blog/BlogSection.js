@@ -42,7 +42,7 @@ function retire(x){
     return (
         <div className="mainContent">
         <Header />
-        <BlogForm />
+        <BlogForm blog={blogs} setBlog={setBlogs} />
         <BlogList blogs={blogs} retire={retire} favBlog={favBlog} />
         <SidePanel fav={fav} retire={retire} removeFav={removeFav}/>
         </div>
