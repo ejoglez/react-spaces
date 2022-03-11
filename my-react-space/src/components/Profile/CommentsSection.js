@@ -1,5 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import Comments from './Comments'
+import CommentForm from "./CommentForm"
+
 
 
 function CommentsSection(){
@@ -18,6 +20,7 @@ function CommentsSection(){
 
     return (
         <div className="comments-section">
+            <CommentForm />
             {displayComments}
         </div>
  )

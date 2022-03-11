@@ -1,48 +1,56 @@
 .main{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-
     justify-content: center;
-    margin: 2rem;
-    gap: 10rem;
+    gap: 5rem;
     width: 100%;
 }
 
-.main img{
+.main h1{
+    padding: 0;
+    margin:0;
+}
+
+.main h2{
+    font-size: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.columnLeft img{
     max-width: 160px;
     max-height: 160px;
+
+    padding-left: 10px;
 }
 
 .columnLeft{
     display: flex;
     flex-direction: column;
 
+    flex-wrap: wrap;
+
     width: 40%;
+
 }
 
 .columnLeft span{
     text-align: left;
+    padding: 10px;
 }
 
 .columnRight{
     display: flex;
     flex-direction: column;
 
-    width: 60%;
-}
+    flex-wrap: wrap;
 
-.contact-section{
-    margin: 0;
-    padding: 0;
-    width: 100%;
+    width: 40%;
 }
 
 .contact{
     display: grid;
-    padding: .5rem;
     grid-template-columns: 1fr 1fr;
-    border: solid RGB(96, 164, 250);
+    border: solid 3px RGB(96, 164, 250);
 }
 
 .comments{
@@ -87,9 +95,23 @@
     gap: .5rem;
 }
 
+.commentForm{
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+}
+
+#commentHeader{
+    margin-bottom: 1.5rem;
+}
+
+
 .friendsList{
     display: block;
     width: 100%;
+
+    justify-content: space-around;
 }
 
 .friendsList img{
@@ -103,6 +125,23 @@
     display: inline-block;
 }
 
-.friend p{
-    margin-left: 1.4rem;
+.interests-table{
+    display: table;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.interests-table th{
+    background-color: #bedbfe;
+    width: 40%;
+}
+
+.interests-table td{
+    background-color: RGB(219, 233, 253);
+    width: 60%;
+}
+
+#table{
+    width: 100%;
+    border: 3px solid #5fa4fa;
 }

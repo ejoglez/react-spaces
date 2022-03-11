@@ -31,27 +31,28 @@ function BlogForm({blog,setBlog}){
     }
     
     return(
-    <form 
-    onSubmit={submit}
-    className="form">
-        <h1>Write about it</h1>
-        <label>
-            Title:
-            <input 
-            value={update.title}
-            onChange={newBlog}
-            type="text" name="title" />
-        </label>
-        <label>
-            Body:
-            <textarea 
-            value={update.body}
-            onChange={newBlog}
-            type="text"  name="body" />
-        </label>
-            <button 
-            type="submit" className="submitBtn">Submit</button>
-    </form>
+        <div className="formContainer">
+            <form 
+            className="blogForm"
+            onSubmit={submit}>
+                <h1>Write about it</h1>
+                <label>
+                    Title:
+                    <input 
+                    value={update.title}
+                    onChange={newBlog}
+                    type="text" name="title" />
+                </label>
+                <label>
+                    Body:
+                    <textarea 
+                    value={update.body}
+                    onChange={newBlog}
+                    type="text"  name="body" />
+                </label>
+                    <button type="submit" className="submitBtn">Submit</button>
+            </form>
+        </div>
     )
 
 }

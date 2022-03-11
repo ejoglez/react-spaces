@@ -8,8 +8,9 @@ function BlogItem({blog,favBlog, retire}){
             <p>{blog.body} </p>
             <a href={blog.link}>{blog.link}</a>
             <br></br>
-            <br></br>
-            <button className="purge" onClick={()=>retire(blog)} >Purge</button>
+            <div className="btnSection">
+            <button className="btn">View More</button>
+            <button className="btn" onClick={()=>retire(blog)}>Purge</button>
         </div>
     )
 }

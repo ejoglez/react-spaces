@@ -2,77 +2,121 @@
     display: grid;
     grid-template-areas:
     'head head head head'
-    '. form . panel'
-    'post post post panel';
+    'form form panel panel'
+    'post post panel panel';
+
     font-family: Tomorrow, sans-serif;
     grid-auto-columns: 1fr;
-    gap: 2rem;
-    margin-bottom: 2rem;
+    gap: .5rem;
+
+    justify-content: center;
+    
+    width: 100%;
+
+}
+
+.formContainer{
+    display: flex;
+    grid-area: form;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    padding: 2rem;
+
+    margin: 0;
+}
+
+.blogForm{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .header{
     grid-area: head;
     padding: 0;
     margin: 0;
-    box-shadow: .6rem .7rem .4rem rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    box-shadow: .6rem .7rem .1rem rgba(0, 0, 0, 0.1);
 }
 
 .header h1{
-    margin: .5rem;
-    margin-top: .5rem;
+    margin: 1rem;
 }
 
 .sidePanel{
     grid-area: panel;
-    border: 4px solid #ccc;
-}
+    display: flex;
+    flex-direction: column;
 
-.sidePanel h1{
-    margin: 1rem;
+    justify-items: center;
+    align-items: center;
+
+    border: 8px solid RGB(35, 82, 174);
+    border-radius: 20px;
+
+    width: 100%;
 }
 
 .blogList-wrap{
    grid-area: post;
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   gap: 1.3rem;
+   display: flex;
+
+   flex-direction: column;
+   flex: wrap;
+
+   justify-content: center;
+   align-items: center;
+
+   gap: 1rem;
 }
 
 .blogPost{
-    border: solid 2px black;
-    border-radius: 10px;
-    box-shadow: 11px 13px 7px #4f6797;
-    text-overflow: hidden;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-.blogPost h3{
-    color:RGB(106, 183, 190);
-}
-
-.form{
     display: flex;
     flex-direction: column;
-    grid-area: form;
-    margin-bottom: 5rem;
-    align-items: flex-start;
+
+    border: solid 2px black;
+    text-align: left;
+
+    border-radius: 10px;
+
+    box-shadow: 8px 13px 2px #4f6797;
+
+    width: 80%;
 }
 
-.form label {
-    margin: .5rem;
-    margin-right: .5rem;
+.blogPost h3{
+    font-size: 2rem;
+    color:RGB(106, 183, 190);
+    padding-left: 10px;
+    margin: 0;
+}
+
+.blogPost p{
+    padding: 0.5rem;
 }
 
 .submitBtn{
     max-width: 35%;
     text-transform: uppercase;
     font-family: Tomorrow, sans-serif;
-    
 }
-.purge{
+
+.btnSection{
+    display:flex;
+    flex-direction: row;
+
+    justify-content: space-around;
+}
+
+.btn{
+    width: 25%;
     font-family: Tomorrow, sans-serif;
     text-transform: uppercase;
+    margin-bottom: 1rem;
 }
 
 /* text-transform: uppercase;

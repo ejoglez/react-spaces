@@ -3,7 +3,6 @@ import "./Home.css"
 
 function Article({title, url, urlToImage, name, author, description}){
     return(
-
         <div className="newsArtkill" key={title}>
             <h2><stron>{title}</stron></h2>
             <a href={url}> 
