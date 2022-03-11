@@ -43,6 +43,9 @@
     border-radius: 10px;
     box-shadow: 11px 13px 7px #4f6797;
     text-overflow: hidden;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .blogPost h3{
     color:RGB(106, 183, 190);
