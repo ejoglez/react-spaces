@@ -33,11 +33,11 @@ function Home(){
     return (
         <div>
             <div className="lolz">
-                <iframe src="https://giphy.com/embed/dcjXtLmMMw5gc" width="15%" height="360" title="dance"frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                <iframe src="https://giphy.com/embed/dcjXtLmMMw5gc" width="15%" height="360" title="dance"frameBorder="0" ></iframe>
 
-                <iframe width="60%" height="360" src="https://www.youtube.com/embed/KmtzQCSh6xk?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
+                <iframe width="60%" height="360" src="https://www.youtube.com/embed/KmtzQCSh6xk?autoplay=1&mute=1" title="YouTube video player"></iframe>
 
-                <iframe src="https://giphy.com/embed/dcjXtLmMMw5gc" width="15%" height="360" title="dance"frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                <iframe src="https://giphy.com/embed/dcjXtLmMMw5gc" width="15%" height="360" title="dance"frameBorder="0" ></iframe>
             </div>
     
             <div>
