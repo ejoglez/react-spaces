@@ -6,11 +6,21 @@ function BlogItem({blog,favBlog, retire}){
         <div onClick={()=>favBlog(blog)} className="blogPost">
             <h3>{blog.title}</h3>
             <p>{blog.body} </p>
-            <a href={blog.link}>{blog.link}</a>
+            {/* <a href={blog.link}>{blog.link}</a> */}
             <br></br>
             <div className="btnSection">
-            <button className="btn">View More</button>
-            <button className="btn" onClick={()=>retire(blog)}>Purge</button>
+                <input className='btn'
+                type='button' 
+                value="view more" 
+                onClick={(e) => {
+                    e.stopPropagation()
+                    document.location.href=blog.link}}/>
+                <button 
+                className="btn" 
+                onClick={(e)=>{
+                    e.stopPropagation()
+                    retire(blog)}}>Purge</button>
+            </div>
         </div>
     )
 }

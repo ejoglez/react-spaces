@@ -5,8 +5,7 @@
       "id": 4,
       "title": "Render That Fender",
       "link": "https://medium.com/@fredrick.l.burgess/render-that-fender-d4a4df343726",
-      "body": 
-      "How to render images using fetch() in React Having trouble rendering your items? Let me help walk you through one of the ways to display items on the DOM using react..."
+      "body": "How to render images using fetch() in React Having trouble rendering your items? Let me help walk you through one of the ways to display items on the DOM using react..."
     },
     {
       "userId": 1,
@@ -48,12 +47,6 @@
       "name": "Kate",
       "image": "https://i.pinimg.com/474x/00/53/9e/00539e53bb6850c7bbb08e55c4fe0658--tom-and-jerry-jerry-oconnell.jpg",
       "post": "hey handsome"
-    },
-    {
-      "id": 4,
-      "name": "Spike",
-      "image": "https://i.pinimg.com/originals/92/68/f0/9268f090522443c4074d72e5f3f24c5f.jpg",
-      "post": "woof"
     }
   ]
 }
