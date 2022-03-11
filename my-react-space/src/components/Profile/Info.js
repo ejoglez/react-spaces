@@ -3,10 +3,10 @@ import React from 'react'
 function Info(){
     return(
         <div>
-            <h1>About Me:</h1>
-                <p>lorem ipsum dolor sit amet, consectetur adip</p>
-            <h1>Hobbies:</h1>
-                <p>Lorem ipsum dolor sit amet, consectet</p>
+            <h2>About Me:</h2>
+                <p>I like to think im pretty good at catching the mouse.</p>
+            <h2>Hobbies:</h2>
+                <p>Web Development</p>
         </div>
     )
 }

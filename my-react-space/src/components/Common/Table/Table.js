@@ -1,38 +1,32 @@
-import React, { useState } from 'react'
-
+import React from 'react'
 
 function Table(){
-
-    const [interests, setInterest] = useState({})
-
     return(
         <div className="interests-table">
-            <form>
-                <table>
+                <table id="table">
                     <tbody>
                         <tr>
                             <th>General</th>
-                        <td>I like to code</td>
+                        <td>Chasing the mouse around the house</td>
                         </tr>
                         <tr>
                             <th>Music</th>
-                        <td>I like to code</td>
+                        <td>Jazz</td>
                         </tr>
                         <tr>
                             <th>Movies</th>
-                        <td>I like to code</td>
+                        <td>Batman the Dark Knight is my fav!</td>
                         </tr>
                         <tr>
                             <th>Idols</th>
-                        <td>I like to code</td>
+                        <td>the Wimps</td>
                         </tr>
                         <tr>
                             <th>Hobbies</th>
-                        <td>I like to code</td>
+                        <td>Web Dev</td>
                         </tr>
                     </tbody>
                 </table>
-            </form>
         </div>
     )
 }

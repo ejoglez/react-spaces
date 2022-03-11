@@ -6,7 +6,10 @@ function BlogItem({blog,favBlog, retire}){
         <div onClick={()=>favBlog(blog)} className="blogPost">
             <h3>{blog.title}</h3>
             <p>{blog.body}</p>
-            <button className="purge" onClick={()=>retire(blog)} >Purge</button>
+            <div className="btnSection">
+            <button className="btn">View More</button>
+            <button className="btn" onClick={()=>retire(blog)}>Purge</button>
+            </div>
         </div>
     )
 }

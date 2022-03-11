@@ -4,6 +4,7 @@ import Navbar from './components/Nav/Navbar';
 import Home from './components/Home/Home'
 import Profile from './components/Profile/Profile'
 import BlogSection from './components/Blog/BlogSection'
+import Footer from './components/Footer/Footer'
 import './App.css';
 
 function App() {
@@ -20,8 +21,8 @@ function App() {
         <Route exact path="/blogs">
           <BlogSection />
         </Route>
-
       </Switch>
+      <Footer />
     </div>
   );
 }
